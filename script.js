@@ -22,6 +22,13 @@ let name5=document.querySelector('.images');
     let data=await response.json();
     console.log(data);
     // console.log(data.main.temp);
+    if(data.message==='city not found'){
+        name4.innerHTML=`ERROR °<span>C</span>`;
+        name2.innerHTML=`ERROR`;
+        name3.innerHTML=`ERROR`;
+        name5.innerHTML=`<img src="error.png" alt="">`
+        return 0;
+    }
     name4.innerHTML=`${Math.floor(data.main.temp)}°<span>C</span>`;
     name2.innerHTML=`${Math.floor(data.main.humidity)}%`;
     name3.innerHTML=`${Math.floor(data.wind.speed)} km/h`;
