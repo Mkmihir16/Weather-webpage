@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h6{
+text-align: center;
+font-size: 60px;
+font-family: 'Roboto', sans-serif;
+text-shadow:2px 2px 5px red ;
+
+}
+h6::selection{
+    color: rgb(255, 87, 87);
+}
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(235, 243, 245);
+}
+.container{
+    height: 80vh;
+    width: 30vw;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    border-radius: 1rem;
+    /* display: flex;
+    justify-content: center; */
+}
+.inputfield{
+    height: 4rem;
+    width: 100%;
+    padding-top:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.inputfield input{
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+.inputfield div{
+    /* padding: 3px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.inputfield div img{
+    height: 20px;
+    width: 20px;
+}
+.images{
+    padding-top: 1.5rem;
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    justify-content: center;
+}
+.images img{
+    height: 10rem;
+    width: 10rem;
+}
+.temp{
+    padding-top: 2rem;
+}
+.temp p{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+.temp p span{
+    font-size: 40px;
+}
+.footerdiv{
+    height: 5rem;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+.right
+{
+    height: 100%;
+    width: 30%;
+    background-color: cadetblue;
+}
+.left
+{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(15, 234, 131); */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.humid{
+    height: 2.5rem;
+    width: 10.5rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.humid img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.humid span{
+    padding: 5px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+}
+.left p{
+    padding-top: 8px;
+    color: white;
+    font-weight: 300;
+    font-weight: 700;
+    
+}

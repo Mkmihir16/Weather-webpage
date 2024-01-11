@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h6>WeatherFolio</h6>
+    <div class="container">
+        <div class="inputfield">
+            <input type="text" placeholder="Search city" spellcheck="false" onkeydown="myfun1()">
+            <div>
+            <img onclick="myfun()"  src="search.png" alt="">
+            </div>
+        </div>
+        <div class="images">
+            <img src="clouds.png" alt="">
+        </div>
+        <div class="temp">
+            <p class="citytemp">22°<span>C</span></p>
+            <p class="cityname">New York</p>
+        </div>
+        <div class="footerdiv">
+            <div class="left">
+                <div class="humid">
+                    <img src="humidity.png" alt=""><span class="humidvalue">64%</span>
+                </div>
+                <p>Humidity</p>
+            </div>
+            <div class="left">
+                <div class="humid">
+                    <img src="wind.png" alt=""><span class="windvalue">18 km/h</span>
+                </div>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
